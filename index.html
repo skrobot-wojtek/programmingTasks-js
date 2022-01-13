@@ -11,19 +11,28 @@
 
 
 <!-- zadanie 1  -->
+<h3>Sprawdz czy liczba je +/-</h3>
     <input type="number" id='pole'> <!-- type text is bad solution, allows you to enter letters and characters   -->
-    <input type="submit" value="Sprawdz" onclick="sprawdz();"> 
+    <input type="submit" value="Sprawdz" onclick="sprawdz();" id="sprawdz"> 
     <article id="wynik"></article>
    
 <!-- zadanie 2 -->
-    <input type="number" id='polea'>
-    <input type="number" id='poleb'>
-    <input type="submit" onclick="wypisz();" value="123">
-    <article id='wynik2'></article>
-
-<!-- zadanie 3 -->
-     
-    <input type="submit" value="RANDOM" onclick="randomer();">
+<h3>Wypisz liczby pomiędzy</h3>
+   <div class='container'>
+     <input type="number" id='polea'>
+     <input type="number" id='poleb'>
+     <input type="submit" onclick="wypisz();" value="Wypisz" id='wypisz'>
+     <article id='wynik2'></article>
+    </div>
+<!-- zadanie 3 in progress -->
+<h3>Zagrajmy !!!</h3>
+<h4>Zgadnij liczbę od 1 do 50</h4>
+    <input type="submit" onclick="randomer1()" id='randomer1'  value=" KLIKNIJ ABY WYLOSOWAĆ " >
+    <div id='X'></div>
+    <br>
+    <input type="number" id='liczbaWprowadzana'>
+    <input type="submit" onclick="randomer2();" value="SPRAWDZ" id='spr'>
+    <div id='wynik3'></div>
    
     
     <script src="style.js"></script>
